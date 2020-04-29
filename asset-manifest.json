@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wordgame/static/css/main.09fd6288.chunk.css",
+    "main.css": "/wordgame/static/css/main.a74cf42b.chunk.css",
     "main.js": "/wordgame/static/js/main.5b4f71bb.chunk.js",
     "main.js.map": "/wordgame/static/js/main.5b4f71bb.chunk.js.map",
     "runtime-main.js": "/wordgame/static/js/runtime-main.6b980d44.js",
@@ -8,15 +8,15 @@
     "static/js/2.3f40e9ef.chunk.js": "/wordgame/static/js/2.3f40e9ef.chunk.js",
     "static/js/2.3f40e9ef.chunk.js.map": "/wordgame/static/js/2.3f40e9ef.chunk.js.map",
     "index.html": "/wordgame/index.html",
-    "precache-manifest.bebc03b8acceacbe0d35258b45460c06.js": "/wordgame/precache-manifest.bebc03b8acceacbe0d35258b45460c06.js",
+    "precache-manifest.b776adb9f4f5002889ae6df181a31085.js": "/wordgame/precache-manifest.b776adb9f4f5002889ae6df181a31085.js",
     "service-worker.js": "/wordgame/service-worker.js",
-    "static/css/main.09fd6288.chunk.css.map": "/wordgame/static/css/main.09fd6288.chunk.css.map",
+    "static/css/main.a74cf42b.chunk.css.map": "/wordgame/static/css/main.a74cf42b.chunk.css.map",
     "static/js/2.3f40e9ef.chunk.js.LICENSE.txt": "/wordgame/static/js/2.3f40e9ef.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6b980d44.js",
     "static/js/2.3f40e9ef.chunk.js",
-    "static/css/main.09fd6288.chunk.css",
+    "static/css/main.a74cf42b.chunk.css",
     "static/js/main.5b4f71bb.chunk.js"
   ]
 }
