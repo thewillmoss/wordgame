@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/wordgame/static/css/main.6742a68d.chunk.css",
-    "main.js": "/wordgame/static/js/main.ef3b42ba.chunk.js",
-    "main.js.map": "/wordgame/static/js/main.ef3b42ba.chunk.js.map",
+    "main.css": "/wordgame/static/css/main.6784584e.chunk.css",
+    "main.js": "/wordgame/static/js/main.5b4f71bb.chunk.js",
+    "main.js.map": "/wordgame/static/js/main.5b4f71bb.chunk.js.map",
     "runtime-main.js": "/wordgame/static/js/runtime-main.6b980d44.js",
     "runtime-main.js.map": "/wordgame/static/js/runtime-main.6b980d44.js.map",
-    "static/js/2.f39e44e4.chunk.js": "/wordgame/static/js/2.f39e44e4.chunk.js",
-    "static/js/2.f39e44e4.chunk.js.map": "/wordgame/static/js/2.f39e44e4.chunk.js.map",
+    "static/js/2.3f40e9ef.chunk.js": "/wordgame/static/js/2.3f40e9ef.chunk.js",
+    "static/js/2.3f40e9ef.chunk.js.map": "/wordgame/static/js/2.3f40e9ef.chunk.js.map",
     "index.html": "/wordgame/index.html",
-    "precache-manifest.4a6013b1c67bc2a9e6d3d618ad0e1d9b.js": "/wordgame/precache-manifest.4a6013b1c67bc2a9e6d3d618ad0e1d9b.js",
+    "precache-manifest.eaf4aec83d1c3a74806f13a8be351fe3.js": "/wordgame/precache-manifest.eaf4aec83d1c3a74806f13a8be351fe3.js",
     "service-worker.js": "/wordgame/service-worker.js",
-    "static/css/main.6742a68d.chunk.css.map": "/wordgame/static/css/main.6742a68d.chunk.css.map",
-    "static/js/2.f39e44e4.chunk.js.LICENSE.txt": "/wordgame/static/js/2.f39e44e4.chunk.js.LICENSE.txt"
+    "static/css/main.6784584e.chunk.css.map": "/wordgame/static/css/main.6784584e.chunk.css.map",
+    "static/js/2.3f40e9ef.chunk.js.LICENSE.txt": "/wordgame/static/js/2.3f40e9ef.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6b980d44.js",
-    "static/js/2.f39e44e4.chunk.js",
-    "static/css/main.6742a68d.chunk.css",
-    "static/js/main.ef3b42ba.chunk.js"
+    "static/js/2.3f40e9ef.chunk.js",
+    "static/css/main.6784584e.chunk.css",
+    "static/js/main.5b4f71bb.chunk.js"
   ]
 }

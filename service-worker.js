@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/wordgame/precache-manifest.4a6013b1c67bc2a9e6d3d618ad0e1d9b.js"
+  "/wordgame/precache-manifest.eaf4aec83d1c3a74806f13a8be351fe3.js"
 );
 
 self.addEventListener('message', (event) => {
