@@ -10,7 +10,7 @@ type DragTileProps = {
 }
 export const DragTile: FunctionComponent<DragTileProps> = ({letter, tileId,moveFunction}) =>{
     const [{isDragging}, drag] = useDrag({
-        item: { type: ItemTypes.TILE, tileId},
+        item: { type: ItemTypes.TILE, tileId, letter},
         end : (item, monitor) => monitor.getDropResult()&&moveFunction(tileId, monitor.getDropResult().location),
         collect: monitor => ({
             isDragging: !!monitor.isDragging(),
@@ -21,6 +21,9 @@ export const DragTile: FunctionComponent<DragTileProps> = ({letter, tileId,moveF
         <div
             ref={drag}
             style={{
+                width: '100%',
+                height: 0,
+                paddingBottom: '100%',
                 opacity: isDragging ? 0.5 : 1,
                 fontSize: '100%',
                 fontWeight: 'bold',

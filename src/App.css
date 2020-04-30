@@ -1,7 +1,16 @@
+
 .App {
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    height:100vh;
-    max-height: 100vh;
+    font-size: 50%;
+}
+.WordGame{
+    display: inline-block;
+    width:100vw;
+    max-width:80vh;
+    max-height:100vh;
+    vertical-align: middle;
+    padding:5% 0;
+}
+.UI{
+    color: #3b2c13;
 }

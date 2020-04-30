@@ -1,15 +1,25 @@
-import React, {Component} from "react";
+import React, {Component, CSSProperties} from "react";
 import {WordGameUI} from "./WordGameUI";
 import { DndProvider } from 'react-dnd'
-import Backend from 'react-dnd-html5-backend'
-
+import MultiBackend, {Preview, PreviewProps} from 'react-dnd-multi-backend';
+import HTML5toTouch from 'react-dnd-multi-backend/dist/esm/HTML5toTouch';
+import './WordGame.css';
+import {Tile} from "./Tile";
 type WordGameProps = {
 }
 type WordGameState = {
     board: string[]
     frame: string[]
 }
-
+const generatePreview = (item: any, type: string, style: CSSProperties) => {
+    if (item.item && item.item.letter) {
+        return <div style={{...item.style,width:"10vw"}}>
+            <Tile letter={item.item.letter} color={"darkgoldenrod"}/>
+        </div>
+    }else{
+        return <div/>
+    }
+}
 export class WordGame extends Component<WordGameProps, WordGameState> {
     constructor(props: WordGameProps ) {
         super(props)
@@ -20,10 +30,11 @@ export class WordGame extends Component<WordGameProps, WordGameState> {
     }
     render() {
         return(
-            <DndProvider backend={Backend}>
-                <div className = "UI">
-                    <WordGameUI board={this.state.board} frame={this.state.frame}/>
-                </div>
+            <DndProvider backend={MultiBackend}
+                         options={HTML5toTouch}>
+                <Preview generator={generatePreview} />
+                <WordGameUI board={this.state.board} frame={this.state.frame}/>
+                <Preview generator={generatePreview} />
             </DndProvider>
         )
     }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Board} from "./Board";
 import {Frame} from "./Frame";
+import './App.css';
 type WordGameUIProps = {
     board:string[]
     frame:string[]
@@ -80,11 +81,12 @@ export class WordGameUI extends Component<WordGameUIProps, WordGameUIState> {
         return letterMap
     }
     render() {
-        return <div style={{width:"100%"}}>
-            <Board activeTileLocMap={this.tileLocToID(this.state.activeTiles)}
-                   tileIndexToLetter={this.createLetterMap(this.props.board,this.state.activeTiles)}
-                   moveFunction={this.moveTile}/>
-            <Frame letterMap={this.getTileIdNoLocToLetter(this.state.activeTiles)} moveFunction={this.moveTile}/>
+        return <div className="UI">
+            <br/>
+                <Board activeTileLocMap={this.tileLocToID(this.state.activeTiles)}
+                       tileIndexToLetter={this.createLetterMap(this.props.board,this.state.activeTiles)}
+                       moveFunction={this.moveTile}/>
+                <Frame letterMap={this.getTileIdNoLocToLetter(this.state.activeTiles)} moveFunction={this.moveTile}/>
         </div>
     }
 }

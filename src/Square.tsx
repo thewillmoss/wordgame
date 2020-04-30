@@ -14,16 +14,19 @@ export const Square: FunctionComponent<SquareProps> = ({color,location,children}
         canDrop: () => true
     })
     return(
-    <div
+        <div
         ref={drop}
         style={{
-        backgroundColor: color,
-        borderRadius:"10%",
-        width: '100%',
-        height: 0,
-        paddingBottom: '100%'
-    }}>
-            {children}
+            padding:'3%'
+        }}>
+            <div style={{
+                width: '100%',
+                height: 0,
+                paddingBottom: '100%',
+                backgroundColor: color,
+                borderRadius:"10%"}}>
+                {children}
+            </div>
     </div>
     );
 }

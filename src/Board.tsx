@@ -11,8 +11,11 @@ type BoardProps = {
 
 export const Board: FunctionComponent<BoardProps> = ({tileIndexToLetter,activeTileLocMap,moveFunction}) =>
     <div style={{
-        display: 'flex',
-        flexWrap: 'wrap',}}>
+        width:'100%',
+        height:'100%',
+        display: 'grid',
+        gridTemplateColumns:'repeat(15, 1fr)',
+        backgroundColor: "#e9dabd"}}>
         {renderAllSquares(tileIndexToLetter,activeTileLocMap, moveFunction)}
     </div>
 
@@ -30,13 +33,9 @@ let renderAllSquares = (tileIndexToLetter:Map<number, string>,activeTileLocMap:M
 let renderSquare = (i:number, tile?:ReactNode) => {
     const color = squareColor(i)
     return (
-        <div key={i} style={{ width: 'calc(100% / 15)', height: 'calc(100% / 15)', backgroundColor: "#e9dabd"}}>
-            <div style ={{padding:"2%"}}>
-                <Square location={i} color = {color}>
+                <Square key={i} location={i} color = {color}>
                     {tile}
                 </Square>
-            </div>
-        </div>
     )
 }
 let renderTile = (i:number, tileIndexToLetter:Map<number, string>, activeTileLocMap:Map<number, number>, moveFunction: (tileId:number,loc:number|undefined) => void) => {

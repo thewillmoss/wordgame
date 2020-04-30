@@ -15,9 +15,13 @@ const tileStyle: React.CSSProperties = {
 const labelStyle : React.CSSProperties = {
     margin: 0,
     position: "absolute",
+    fontWeight: "bolder",
+    fontSize: "200%",
     top: "50%",
     left: "50%",
-    transform: "translate(-50%, -50%)"
+    transform: "translate(-50%, -50%)",
+    userSelect:"none",
+    WebkitUserSelect:"none"
 }
 
 export const Tile: FunctionComponent<TileProps> = ({letter,color}) =>
@@ -26,6 +30,6 @@ export const Tile: FunctionComponent<TileProps> = ({letter,color}) =>
             backgroundColor: color ? color : "#D2B48C"
         }}>
             <div style = {labelStyle}>
-                {letter}<sub>1</sub>
+                {letter}
             </div>
         </div>

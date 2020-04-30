@@ -21,7 +21,7 @@ const [{ isOver }, drop] = useDrop({
 <div    ref={drop}
         style={{
         width: '100%',
-        height: '100%',
+        height: '7vh',
         backgroundColor: "saddlebrown",
         display: 'flex',
         flexWrap: 'wrap',
@@ -34,7 +34,7 @@ let renderAllTiles = (letterMap:Map<number,string>, moveFunction: (tileId:number
     const tiles:ReactNode[] = []
     letterMap.forEach(((value, key) =>
         {tiles.push(
-            <div style={{ width: 'calc(100% / 15)', height: 'calc(100% / 15)', padding: "1%"}}>
+            <div key = {key} style={{ width: 'calc(100% / 15)', height: 'calc(100% / 15)', padding: "1%"}}>
                 <DragTile tileId={key} moveFunction={moveFunction} letter={value}/>
             </div>)}))
     return tiles;

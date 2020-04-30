@@ -8,7 +8,9 @@ import {WordGame} from "./WordGame";
 function App() {
   return (
     <div className="App">
-      <WordGame/>
+        <div className = "WordGame">
+            <WordGame/>
+        </div>
     </div>
   );
 }
